@@ -3,14 +3,14 @@ import { Button } from '@/components/ui/button';
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background to-accent/10 pt-16">
+    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-secondary/30 to-accent/10 pt-16">
       <div className="container-max section-padding text-center">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 leading-tight">
             Welcome to
-            <span className="block text-accent">Mayflower</span>
+            <span className="block text-primary">Mayflower</span>
           </h1>
-          <p className="text-xl md:text-2xl text-foreground/90 mb-8 leading-relaxed">
+          <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
             Navigating the future through innovative solutions and exceptional teamwork. 
             Discover our mission, meet our team, and join us on this incredible journey.
           </p>
@@ -24,7 +24,7 @@ const Hero = () => {
             <Button 
               variant="outline" 
               size="lg"
-              className="border-2 border-foreground text-foreground hover:bg-foreground hover:text-background font-semibold px-8 py-3 text-lg"
+              className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold px-8 py-3 text-lg"
             >
               Join Our Team
             </Button>
