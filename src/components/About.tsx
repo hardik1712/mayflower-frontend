@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 
@@ -31,8 +30,11 @@ const About = () => {
             <Button 
               size="lg"
               className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold"
+              asChild
             >
-              Read Our Substack
+              <a href="https://substack.com/@smoothoperaterr" target="_blank" rel="noopener noreferrer">
+                Read Our Substack
+              </a>
             </Button>
           </div>
           <div>
