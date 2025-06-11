@@ -12,7 +12,7 @@ interface SubstackPreviewModalProps {
 const SubstackPreviewModal = ({ isOpen, onClose }: SubstackPreviewModalProps) => {
   const recentArticles = [
     {
-      title: "Latest Insights from Mayflower",
+      title: "Latest Insights from Smooth Operator",
       excerpt: "Exploring the intersection of innovation and practical implementation in our latest research findings...",
       url: "https://substack.com/@smoothoperaterr/note/c-124552316",
       date: "Recent"
@@ -25,7 +25,7 @@ const SubstackPreviewModal = ({ isOpen, onClose }: SubstackPreviewModalProps) =>
     },
     {
       title: "Building Tomorrow",
-      excerpt: "A deep dive into the methodologies and principles that guide our mission at Mayflower...",
+      excerpt: "A deep dive into the methodologies and principles that guide our mission and vision...",
       url: "https://substack.com/@smoothoperaterr",
       date: "Last Week"
     }
@@ -36,10 +36,10 @@ const SubstackPreviewModal = ({ isOpen, onClose }: SubstackPreviewModalProps) =>
       <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto">
         <DialogHeader>
           <DialogTitle className="text-2xl font-bold text-foreground mb-2">
-            Mayflower Substack Articles
+            Smooth Operator Substack
           </DialogTitle>
           <p className="text-muted-foreground">
-            Explore our latest insights, research, and discoveries
+            Explore the latest insights, research, and discoveries
           </p>
         </DialogHeader>
         
