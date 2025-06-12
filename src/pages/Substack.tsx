@@ -8,20 +8,20 @@ const Substack = () => {
   const articles = [
     {
       id: 1,
-      title: "Latest Insights from Smooth Operator",
-      excerpt: "Exploring the intersection of innovation and practical implementation in our latest research findings. Dive deep into methodologies that are shaping the future of technology and human interaction.",
+      title: "test 1",
+      excerpt: "A comprehensive exploration of NVIDIA's cutting-edge technology and its impact on the future of computing. This article delves into the latest developments in GPU architecture, AI acceleration, and the company's strategic positioning in the tech industry.",
       url: "https://substack.com/home/post/p-165763046",
       date: "Recent",
-      image: "/placeholder.svg", // Using placeholder for now - you can replace with actual article images
+      image: "/lovable-uploads/c34464f8-cdc5-4ce7-955f-bd139726eceb.png",
       readTime: "5 min read"
     },
     {
       id: 2,
-      title: "The Future of Innovation",
-      excerpt: "Understanding how emerging technologies shape our approach to problem-solving and creative solutions. A comprehensive look at trends that will define the next decade of technological advancement.",
+      title: "app dev 101",
+      excerpt: "An introduction to modern application development principles and best practices. Learn about React components, state management, styling approaches, and how to build scalable web applications with clean, maintainable code.",
       url: "https://substack.com/home/post/p-165762903",
       date: "This Week",
-      image: "/placeholder.svg", // Using placeholder for now - you can replace with actual article images
+      image: "/lovable-uploads/1c7390df-7707-4c5d-bfd9-d0391b0307c9.png",
       readTime: "8 min read"
     }
   ];
