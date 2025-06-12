@@ -1,12 +1,9 @@
 
-import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import SubstackPreviewModal from './SubstackPreviewModal';
+import { Link } from 'react-router-dom';
 
 const About = () => {
-  const [isSubstackModalOpen, setIsSubstackModalOpen] = useState(false);
-
   return (
     <section id="about" className="py-20 bg-secondary/20">
       <div className="container-max section-padding">
@@ -35,9 +32,11 @@ const About = () => {
             <Button 
               size="lg"
               className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold"
-              onClick={() => setIsSubstackModalOpen(true)}
+              asChild
             >
-              Read Our Substack
+              <Link to="/substack">
+                Read Our Substack
+              </Link>
             </Button>
           </div>
           <div>
@@ -62,11 +61,6 @@ const About = () => {
           </div>
         </div>
       </div>
-
-      <SubstackPreviewModal 
-        isOpen={isSubstackModalOpen} 
-        onClose={() => setIsSubstackModalOpen(false)} 
-      />
     </section>
   );
 };
