@@ -8,25 +8,34 @@ const Substack = () => {
   const articles = [
     {
       id: 1,
-      title: "test 1",
-      excerpt: "A comprehensive exploration of NVIDIA's cutting-edge technology and its impact on the future of computing. This article delves into the latest developments in GPU architecture, AI acceleration, and the company's strategic positioning in the tech industry.",
-      url: "https://substack.com/home/post/p-165763046",
+      title: "Mayflower",
+      excerpt: "An exploration of the Mayflower vision and mission. Discover the foundational principles and goals that drive our innovative approach to creating meaningful change in the world through technology and collaboration.",
+      url: "https://vsmayflower.substack.com/p/mayflower?r=5awmlt",
       date: "Recent",
       image: "/lovable-uploads/c34464f8-cdc5-4ce7-955f-bd139726eceb.png",
-      readTime: "5 min read"
+      readTime: "6 min read"
     },
     {
       id: 2,
-      title: "app dev 101",
-      excerpt: "An introduction to modern application development principles and best practices. Learn about React components, state management, styling approaches, and how to build scalable web applications with clean, maintainable code.",
-      url: "https://substack.com/home/post/p-165762903",
+      title: "India's Quiet Revolution in Healthcare",
+      excerpt: "A deep dive into India's transformative healthcare initiatives and the quiet revolution taking place across the country. Examining innovative approaches, policy changes, and technological advancements reshaping healthcare delivery.",
+      url: "https://vsmayflower.substack.com/p/indias-quiet-revolution-in-healthcare?r=5awmlt",
       date: "This Week",
       image: "/lovable-uploads/1c7390df-7707-4c5d-bfd9-d0391b0307c9.png",
       readTime: "8 min read"
+    },
+    {
+      id: 3,
+      title: "Latest Insights",
+      excerpt: "Our newest article exploring cutting-edge developments and insights. Stay informed about the latest trends, research findings, and innovative solutions that are shaping the future of technology and society.",
+      url: "https://substack.com/home/post/p-166048892",
+      date: "Latest",
+      image: "/lovable-uploads/c34464f8-cdc5-4ce7-955f-bd139726eceb.png",
+      readTime: "7 min read"
     }
   ];
 
-  const substackProfileUrl = "https://substack.com/@smoothoperaterr";
+  const substackProfileUrl = "https://substack.com/@vsmayflower";
 
   return (
     <div className="min-h-screen bg-background">
@@ -56,10 +65,10 @@ const Substack = () => {
       <section className="py-16 bg-secondary/20">
         <div className="container-max section-padding text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Smooth Operator Substack
+            VS Mayflower Substack
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-8">
-            Explore the latest insights, research, and discoveries from my Substack profile. 
+            Explore the latest insights, research, and discoveries from our Substack profile. 
             Stay updated with cutting-edge thoughts on innovation and technology.
           </p>
           <Button 
@@ -83,7 +92,7 @@ const Substack = () => {
               Latest Articles
             </h2>
             <p className="text-lg text-muted-foreground">
-              Recent posts from the Smooth Operator Substack
+              Recent posts from the VS Mayflower Substack
             </p>
           </div>
 
@@ -157,7 +166,7 @@ const Substack = () => {
               Want to read more?
             </h3>
             <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Visit my full Substack profile to explore all articles, subscribe for updates, 
+              Visit our full Substack profile to explore all articles, subscribe for updates, 
               and join the community of readers interested in innovation and technology.
             </p>
             <Button 
