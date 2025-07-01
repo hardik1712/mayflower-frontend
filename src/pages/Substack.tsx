@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { ExternalLink, ArrowLeft } from 'lucide-react';
@@ -12,7 +11,7 @@ const Substack = () => {
       excerpt: "An exploration of the Mayflower vision and mission. Discover the foundational principles and goals that drive our innovative approach to creating meaningful change in the world through technology and collaboration.",
       url: "https://vsmayflower.substack.com/p/mayflower?r=5awmlt",
       date: "Recent",
-      image: "/lovable-uploads/c34464f8-cdc5-4ce7-955f-bd139726eceb.png",
+      image: "/lovable-uploads/f129d2bd-fc3e-48bd-b56c-80baf7591cbc.png",
       readTime: "6 min read"
     },
     {
@@ -21,7 +20,7 @@ const Substack = () => {
       excerpt: "A deep dive into India's transformative healthcare initiatives and the quiet revolution taking place across the country. Examining innovative approaches, policy changes, and technological advancements reshaping healthcare delivery.",
       url: "https://vsmayflower.substack.com/p/indias-quiet-revolution-in-healthcare?r=5awmlt",
       date: "This Week",
-      image: "/lovable-uploads/1c7390df-7707-4c5d-bfd9-d0391b0307c9.png",
+      image: "/lovable-uploads/384399df-f06c-45d8-a23e-f8707fe4d271.png",
       readTime: "8 min read"
     },
     {
@@ -30,7 +29,7 @@ const Substack = () => {
       excerpt: "Our newest article exploring cutting-edge developments and insights. Stay informed about the latest trends, research findings, and innovative solutions that are shaping the future of technology and society.",
       url: "https://substack.com/home/post/p-166048892",
       date: "Latest",
-      image: "/lovable-uploads/c34464f8-cdc5-4ce7-955f-bd139726eceb.png",
+      image: "/lovable-uploads/e66ba98f-5ed7-4204-a25b-7858fd4d37db.png",
       readTime: "7 min read"
     }
   ];
