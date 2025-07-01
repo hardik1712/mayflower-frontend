@@ -25,7 +25,7 @@ const Substack = () => {
     },
     {
       id: 3,
-      title: "Latest Insights",
+      title: "What Does It Mean to Be an AI-Native Health Tech Platform?",
       excerpt: "Our newest article exploring cutting-edge developments and insights. Stay informed about the latest trends, research findings, and innovative solutions that are shaping the future of technology and society.",
       url: "https://substack.com/home/post/p-166048892",
       date: "Latest",
