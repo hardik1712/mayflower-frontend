@@ -1,5 +1,5 @@
 
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -40,15 +40,7 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-center gap-3">
                 <Mail className="h-4 w-4" />
-                <span className="text-primary-foreground/80">hello@mayflower.health</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <Phone className="h-4 w-4" />
-                <span className="text-primary-foreground/80">+1 (555) 123-4567</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <MapPin className="h-4 w-4" />
-                <span className="text-primary-foreground/80">San Francisco, CA</span>
+                <span className="text-primary-foreground/80">vaibhav@mayflower-health.com</span>
               </li>
             </ul>
           </div>
