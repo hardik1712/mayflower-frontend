@@ -7,9 +7,9 @@ const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
+    { name: 'Home', href: '#' },
     { name: 'About', href: '#about' },
     { name: 'Team', href: '#team' },
-    { name: 'Mission', href: '#mission' },
     { name: 'Careers', href: '#careers' },
   ];
 
@@ -27,11 +27,17 @@ const Navigation = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-foreground hover:text-accent transition-colors duration-200 font-medium"
+                className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
               >
                 {item.name}
               </a>
             ))}
+            <Button 
+              size="sm"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-6"
+            >
+              Get Started
+            </Button>
           </div>
 
           {/* Mobile menu button */}
@@ -55,12 +61,18 @@ const Navigation = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-foreground hover:text-accent transition-colors duration-200 font-medium py-2"
+                  className="text-foreground hover:text-primary transition-colors duration-200 font-medium py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
                 </a>
               ))}
+              <Button 
+                size="sm"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold w-fit mt-2"
+              >
+                Get Started
+              </Button>
             </div>
           </div>
         )}
