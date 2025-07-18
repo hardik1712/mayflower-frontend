@@ -1,186 +1,163 @@
-import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
-import { ExternalLink, ArrowLeft } from 'lucide-react';
-import { Link } from 'react-router-dom';
+
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { ArrowLeft, ExternalLink } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Substack = () => {
   const articles = [
     {
       id: 1,
-      title: "Mayflower",
-      excerpt: "An exploration of the Mayflower vision and mission. Discover the foundational principles and goals that drive our innovative approach to creating meaningful change in the world through technology and collaboration.",
-      url: "https://vsmayflower.substack.com/p/mayflower?r=5awmlt",
-      date: "Recent",
-      image: "/lovable-uploads/f129d2bd-fc3e-48bd-b56c-80baf7591cbc.png",
-      readTime: "6 min read"
+      title: "Why Patient Trust Starts with Smarter Data Sharing",
+      summary: "Exploring how artificial intelligence is revolutionizing medical diagnosis, treatment planning, and patient care across various healthcare sectors.",
+      image: "/lovable-uploads/838bf94b-fe35-42d7-946f-21fef1fad89b.png",
+      link: "https://substack.com/home/post/p-167967178"
     },
     {
       id: 2,
-      title: "India's Quiet Revolution in Healthcare",
-      excerpt: "A deep dive into India's transformative healthcare initiatives and the quiet revolution taking place across the country. Examining innovative approaches, policy changes, and technological advancements reshaping healthcare delivery.",
-      url: "https://vsmayflower.substack.com/p/indias-quiet-revolution-in-healthcare?r=5awmlt",
-      date: "This Week",
-      image: "/lovable-uploads/384399df-f06c-45d8-a23e-f8707fe4d271.png",
-      readTime: "8 min read"
+      title: "What Does it Mean to be a AI-Native Health Tech Platform",
+      summary: "A comprehensive guide to implementing digital transformation initiatives that drive business growth and operational efficiency.",
+      image: "/lovable-uploads/27c0daca-358a-4202-9f2d-c6156fef5636.png",
+      link: "https://substack.com/home/post/p-166048892"
     },
     {
       id: 3,
-      title: "What Does It Mean to Be an AI-Native Health Tech Platform?",
-      excerpt: "Our newest article exploring cutting-edge developments and insights. Stay informed about the latest trends, research findings, and innovative solutions that are shaping the future of technology and society.",
-      url: "https://substack.com/home/post/p-166048892",
-      date: "Latest",
-      image: "/lovable-uploads/e66ba98f-5ed7-4204-a25b-7858fd4d37db.png",
-      readTime: "7 min read"
+      title: "India's Quite Revolution in Healthcare",
+      summary: "Best practices for developing and maintaining technology solutions that can grow with your business needs and market demands.",
+      image: "/lovable-uploads/15283dc0-8b6b-4bb0-8cfc-3d824a61478e.png",
+      link: "https://substack.com/home/post/p-162068835"
+    },
+    {
+      id: 4,
+      title: "Mayflower",
+      summary: "Insights into modern product development methodologies and how to foster innovation within your development teams.",
+      image: "/lovable-uploads/0b2a86f2-3b48-4f80-92c0-e3ffeab7586c.png",
+      link: "https://substack.com/home/post/p-161790860"
     }
   ];
 
-  const substackProfileUrl = "https://substack.com/@vsmayflower";
-
   return (
-    <div className="min-h-screen bg-background">
-      {/* Navigation */}
-      <nav className="bg-card border-b border-border py-4">
-        <div className="container-max section-padding">
-          <div className="flex items-center justify-between">
-            <Link to="/" className="flex items-center gap-2 text-foreground hover:text-accent transition-colors">
-              <ArrowLeft className="h-5 w-5" />
-              <span className="font-medium">Back to Mayflower</span>
-            </Link>
-            <Button 
-              variant="outline"
-              className="border-accent text-accent hover:bg-accent hover:text-accent-foreground"
-              asChild
-            >
-              <a href={substackProfileUrl} target="_blank" rel="noopener noreferrer">
-                <ExternalLink className="h-4 w-4 mr-2" />
-                Visit Full Profile
-              </a>
-            </Button>
-          </div>
-        </div>
-      </nav>
-
+    <div className="min-h-screen bg-white">
       {/* Header */}
-      <section className="py-16 bg-secondary/20">
-        <div className="container-max section-padding text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            VS Mayflower Substack
+      <header className="bg-[#3F533F] text-white px-6 py-4">
+        <div className="max-w-7xl mx-auto flex items-center justify-between">
+          <div className="text-xl font-bold font-fraunces">Mayflower</div>
+          <nav className="hidden md:flex space-x-8">
+            <Link to="/" className="hover:text-gray-200 font-fraunces">Home</Link>
+            <a href="#" className="hover:text-gray-200 font-fraunces">About</a>
+            <a href="#" className="hover:text-gray-200 font-fraunces">Team</a>
+            <a href="#" className="hover:text-gray-200 font-fraunces">Careers</a>
+          </nav>
+          <Button className="bg-[#2F3F2F] hover:bg-[#1F2F1F] text-white rounded-full px-6 font-fraunces">
+            Get Started
+          </Button>
+        </div>
+      </header>
+
+      {/* Content */}
+      <div className="max-w-7xl mx-auto px-6 py-12">
+        {/* Back button */}
+        <Link to="/" className="inline-flex items-center text-[#3F533F] hover:text-[#2F3F2F] mb-8">
+          <ArrowLeft className="mr-2 h-4 w-4" />
+          Back to Home
+        </Link>
+
+        {/* Page title */}
+        <div className="text-center mb-12">
+          <h1 className="font-fraunces text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+            Our Substack Articles
           </h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-8">
-            Explore the latest insights, research, and discoveries from our Substack profile. 
-            Stay updated with cutting-edge thoughts on innovation and technology.
+          <p className="text-gray-600 text-lg">
+            Insights and thoughts from the Mayflower team
           </p>
+        </div>
+
+        {/* Articles grid */}
+        <div className="grid md:grid-cols-2 gap-8 mb-12">
+          {articles.map((article) => (
+            <Card key={article.id} className="overflow-hidden hover:shadow-lg transition-shadow">
+              <CardContent className="p-0">
+                <img 
+                  src={article.image} 
+                  alt={article.title}
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="font-fraunces text-xl font-semibold text-gray-800 mb-3">
+                    {article.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm mb-4 leading-relaxed">
+                    {article.summary}
+                  </p>
+                  <Button 
+                    asChild
+                    variant="outline" 
+                    className="border-[#3F533F] text-[#3F533F] hover:bg-[#3F533F] hover:text-white font-fraunces"
+                  >
+                    <a href={article.link} target="_blank" rel="noopener noreferrer">
+                      Read Article
+                      <ExternalLink className="ml-2 h-4 w-4" />
+                    </a>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+
+        {/* Visit Substack profile button */}
+        <div className="text-center">
           <Button 
-            size="lg"
-            className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold"
             asChild
+            className="bg-[#3F533F] hover:bg-[#2F3F2F] text-white px-8 py-3 text-lg font-fraunces"
           >
-            <a href={substackProfileUrl} target="_blank" rel="noopener noreferrer">
-              <ExternalLink className="h-5 w-5 mr-2" />
-              Subscribe on Substack
+            <a href="https://substack.com/@vsmayflower" target="_blank" rel="noopener noreferrer">
+              Visit Our Substack Profile
+              <ExternalLink className="ml-2 h-5 w-5" />
             </a>
           </Button>
         </div>
-      </section>
+      </div>
 
-      {/* Articles */}
-      <section className="py-20">
-        <div className="container-max section-padding">
-          <div className="mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Latest Articles
-            </h2>
-            <p className="text-lg text-muted-foreground">
-              Recent posts from the VS Mayflower Substack
+      {/* Footer */}
+      <footer className="bg-[#3F533F] text-white py-12 px-6 mt-16">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-8">
+          <div>
+            <h3 className="font-fraunces text-lg font-semibold mb-4">About Mayflower</h3>
+            <p className="text-gray-200 text-sm mb-4">
+              Mayflower brings change in applying and including 
+              technology the level of digital innovation and 
+              a set of new possibilities.
             </p>
+            <div className="flex space-x-4">
+              <div className="w-8 h-8 bg-white bg-opacity-20 rounded-full"></div>
+              <div className="w-8 h-8 bg-white bg-opacity-20 rounded-full"></div>
+              <div className="w-8 h-8 bg-white bg-opacity-20 rounded-full"></div>
+            </div>
           </div>
-
-          <div className="grid gap-8 md:gap-12">
-            {articles.map((article) => (
-              <Card key={article.id} className="bg-card border-border hover:shadow-lg transition-all duration-300 overflow-hidden">
-                <div className="md:flex">
-                  {/* Article Image */}
-                  <div className="md:w-1/3">
-                    <div className="aspect-video md:aspect-square bg-muted">
-                      <img 
-                        src={article.image} 
-                        alt={article.title}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                  </div>
-                  
-                  {/* Article Content */}
-                  <div className="md:w-2/3">
-                    <CardContent className="p-6 md:p-8">
-                      <div className="flex items-center gap-4 mb-4">
-                        <span className="text-sm text-accent font-medium bg-accent/10 px-3 py-1 rounded-full">
-                          {article.date}
-                        </span>
-                        <span className="text-sm text-muted-foreground">
-                          {article.readTime}
-                        </span>
-                      </div>
-                      
-                      <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-                        {article.title}
-                      </h3>
-                      
-                      <p className="text-muted-foreground mb-6 leading-relaxed text-lg">
-                        {article.excerpt}
-                      </p>
-                      
-                      <div className="flex items-center gap-4">
-                        <Button 
-                          className="bg-accent hover:bg-accent/90 text-accent-foreground"
-                          asChild
-                        >
-                          <a href={article.url} target="_blank" rel="noopener noreferrer">
-                            Read Full Article
-                            <ExternalLink className="h-4 w-4 ml-2" />
-                          </a>
-                        </Button>
-                        
-                        <Button 
-                          variant="outline"
-                          size="sm"
-                          className="border-accent text-accent hover:bg-accent hover:text-accent-foreground"
-                          asChild
-                        >
-                          <a href={substackProfileUrl} target="_blank" rel="noopener noreferrer">
-                            View on Substack
-                          </a>
-                        </Button>
-                      </div>
-                    </CardContent>
-                  </div>
-                </div>
-              </Card>
-            ))}
+          <div>
+            <h3 className="font-fraunces text-lg font-semibold mb-4">Quick Links</h3>
+            <ul className="space-y-2 text-sm text-gray-200">
+              <li><Link to="/" className="hover:text-white">Home</Link></li>
+              <li><a href="#" className="hover:text-white">About Us</a></li>
+              <li><a href="#" className="hover:text-white">Our Team</a></li>
+              <li><a href="#" className="hover:text-white">Careers</a></li>
+            </ul>
           </div>
-
-          {/* Call to Action */}
-          <div className="text-center mt-16 p-8 bg-secondary/20 rounded-lg">
-            <h3 className="text-2xl font-bold text-foreground mb-4">
-              Want to read more?
-            </h3>
-            <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Visit our full Substack profile to explore all articles, subscribe for updates, 
-              and join the community of readers interested in innovation and technology.
-            </p>
-            <Button 
-              size="lg"
-              className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold"
-              asChild
-            >
-              <a href={substackProfileUrl} target="_blank" rel="noopener noreferrer">
-                <ExternalLink className="h-5 w-5 mr-2" />
-                Visit Complete Profile
-              </a>
-            </Button>
+          <div>
+            <h3 className="font-fraunces text-lg font-semibold mb-4">Connect</h3>
+            <ul className="space-y-2 text-sm text-gray-200">
+              <li>contact@mayflower-health.com</li>
+            </ul>
           </div>
+          <div></div>
         </div>
-      </section>
+        <div className="max-w-7xl mx-auto border-t border-white border-opacity-20 mt-8 pt-8 text-center">
+          <p className="text-gray-200 text-sm">
+            © 2024 Mayflower. All rights reserved. Built with love and purpose.
+          </p>
+        </div>
+      </footer>
     </div>
   );
 };
